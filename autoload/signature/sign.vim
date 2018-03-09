@@ -67,7 +67,7 @@ function! signature#sign#Remove(sign, lnum)                                     
     else
       let l:arr = [a:lnum]
     endif
-    call assert_true(len(l:arr) == 1, "Multiple marks found where one was expected")
+    " call assert_true(len(l:arr) == 1, "Multiple marks found where one was expected")
 
     for l:lnum in l:arr
       " FIXME: Placed guard to avoid triggering issue #53
